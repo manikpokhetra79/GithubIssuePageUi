@@ -1,0 +1,83 @@
+body {
+  background-color: white;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* utility classes */
+.d-flex {
+  display: flex;
+}
+.container-70 {
+  width: 70vw;
+}
+/* header css */
+#header-nav {
+  flex-flow: row wrap;
+  margin: 1.5rem;
+  justify-content: space-between;
+}
+.left-nav {
+  flex-direction: row;
+  align-items: center;
+}
+.right-nav {
+  flex-direction: row;
+}
+.nav-box {
+  margin: 0 5px;
+  border: 1px solid grey;
+  border-radius: 18px;
+  padding: 3px 8px;
+}
+.nav-count {
+  padding-left: 2px;
+}
+/* page-tabs container */
+
+.page-tabs-container .container-70 {
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.page-tabs {
+  padding: 5px;
+}
+/* content container */
+.content-container {
+  margin: 2rem auto;
+  border: 1px solid grey;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.content-tab-header {
+  flex-flow: row wrap;
+  border-bottom: 1px solid grey;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-header-container {
+  justify-content: space-between;
+}
+#open-issues {
+  padding: 1rem;
+}
+.right-header-container ul {
+  list-style-type: none;
+  flex-flow: row wrap;
+}
+.right-header-container ul li {
+  padding: 1rem;
+}
+#closed-issues {
+  padding: 1rem;
+}
+/* info-container */
+.info-container {
+  justify-content: center;
+}
+/* footer nav */
+
+#footer-nav ul {
+  list-style-type: none;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
