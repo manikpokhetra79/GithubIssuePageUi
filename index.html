@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom stylesheet -->
     <link rel="stylesheet" href="stylesheets/stylesheet.css" />
+    <!-- font awesome stylesheet cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <title>Github Issues Page</title>
   </head>
   <body>
@@ -13,11 +21,14 @@
       <nav id="header-nav" class="d-flex">
         <div class="left-nav d-flex">
           <div>
-            <a href="https://github.com/facebook">facebook</a>
+            <i class="fab fa-github"></i>
+            <a class="blue" href="https://github.com/facebook">facebook</a>
           </div>
           <span>/</span>
           <div>
-            <a href="https://github.com/facebook/react">react</a>
+            <a class="blue bold" href="https://github.com/facebook/react"
+              >react</a
+            >
           </div>
           <div class="nav-box">Public</div>
         </div>
@@ -32,14 +43,22 @@
       <!-- tabs container -->
       <div class="page-tabs-container">
         <div class="container-70 d-flex">
-          <div class="page-tabs">Code</div>
-          <div class="page-tabs active-tab">Issues<span> total</span></div>
-          <div class="page-tabs">Pull Requests</div>
-          <div class="page-tabs">Actions</div>
-          <div class="page-tabs">Projects</div>
-          <div class="page-tabs">Wiki</div>
-          <div class="page-tabs">Security</div>
-          <div class="page-tabs">Insights</div>
+          <div class="page-tabs"><i class="fas fa-code"></i> Code</div>
+          <div class="page-tabs active-tab">
+            <i class="far fa-dot-circle"></i> Issues<span> 625</span>
+          </div>
+          <div class="page-tabs">
+            <i class="fas fa-wave-square"></i> Pull Requests
+          </div>
+          <div class="page-tabs">
+            <i class="far fa-play-circle"></i> Actions
+          </div>
+          <div class="page-tabs">
+            <i class="fas fa-book-reader"></i> Projects
+          </div>
+          <div class="page-tabs"><i class="fab fa-wikipedia-w"></i> Wiki</div>
+          <div class="page-tabs"><i class="fas fa-lock"></i> Security</div>
+          <div class="page-tabs"><i class="far fa-chart-bar"></i> Insights</div>
         </div>
       </div>
 
@@ -48,17 +67,21 @@
         <!-- tabs header inside container -->
         <div class="content-tab-header d-flex">
           <div class="left-header-container d-flex">
-            <div id="open-issues">625 Open</div>
-            <div id="closed-issues">10104 Closed</div>
+            <div id="open-issues">
+              <i class="far fa-dot-circle"></i> 625 Open
+            </div>
+            <div id="closed-issues">
+              <i class="fas fa-check-double blue"></i> 10104 Closed
+            </div>
           </div>
           <div class="right-header-container">
             <ul class="d-flex">
-              <li>Author</li>
-              <li>Label</li>
-              <li>Projects</li>
-              <li>Milestones</li>
-              <li>Assignment</li>
-              <li>Sort</li>
+              <li>Author <i class="fas fa-angle-down red"></i></li>
+              <li>Label <i class="fas fa-angle-down red"></i></li>
+              <li>Projects <i class="fas fa-angle-down red"></i></li>
+              <li>Milestones <i class="fas fa-angle-down red"></i></li>
+              <li>Assignment <i class="fas fa-angle-down red"></i></li>
+              <li>Sort <i class="fas fa-angle-down red"></i></li>
             </ul>
           </div>
         </div>
@@ -69,8 +92,9 @@
       </div>
       <div class="info-container d-flex">
         <p>
-          <span>ProTip!</span>What's not been updated in the month:
-          <a href="#">updated</a>
+          <span><i class="far fa-lightbulb fa-2x"></i>ProTip!</span>What's not
+          been updated in the month:
+          <a href="#" class="blue">updated</a>
         </p>
       </div>
     </main>
@@ -83,7 +107,7 @@
           <li><a href="#">Security</a></li>
           <li><a href="#">Status</a></li>
           <li><a href="#">Docs</a></li>
-          <li>icon</li>
+          <li><i class="fab fa-github fa-2x"></i></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Api</a></li>
@@ -94,5 +118,6 @@
       </nav>
     </footer>
   </body>
+  <!-- custom js file -->
   <script src="./scripts/script.js"></script>
 </html>

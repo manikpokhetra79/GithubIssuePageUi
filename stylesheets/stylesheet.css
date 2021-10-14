@@ -2,6 +2,12 @@ body {
   background-color: white;
   font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  background-color: #f0f2f5;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 /* utility classes */
 .d-flex {
@@ -10,14 +16,37 @@ body {
 .container-70 {
   width: 70vw;
 }
+@media screen and (max-width: 1024px) {
+  .container-70 {
+    width: 90vw;
+  }
+}
+.blue {
+  color: #58a6ff;
+}
+.bold {
+  font-weight: 800;
+}
+.red {
+  color: red;
+}
 /* header css */
 #header-nav {
   flex-flow: row wrap;
   margin: 1.5rem;
   justify-content: space-between;
 }
+@media screen and (max-width: 572px) {
+  #header-nav {
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .left-nav {
+    margin-bottom: 1.2rem;
+  }
+}
 .left-nav {
-  flex-direction: row;
   align-items: center;
 }
 .right-nav {
@@ -33,13 +62,18 @@ body {
   padding-left: 2px;
 }
 /* page-tabs container */
-
+.page-tabs-container {
+  border-bottom: 2px solid lightgray;
+}
 .page-tabs-container .container-70 {
   justify-content: space-between;
   flex-flow: row wrap;
 }
 .page-tabs {
   padding: 5px;
+}
+.page-tabs:hover {
+  border-bottom: 5px solid lightsalmon;
 }
 /* content container */
 .content-container {
@@ -53,6 +87,14 @@ body {
   border-bottom: 1px solid grey;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 572px) {
+  .content-tab-header {
+    flex-flow: column wrap;
+  }
+  .left-header-container {
+    font-weight: 600;
+  }
 }
 .left-header-container {
   justify-content: space-between;
@@ -70,6 +112,40 @@ body {
 #closed-issues {
   padding: 1rem;
 }
+/* issue container */
+.issue-container {
+  padding: 1.3rem;
+  border-bottom: 1px solid lightgrey;
+  align-items: flex-start;
+}
+.issue-container:hover {
+  background-color: #d8d8d8;
+}
+.issue-icon {
+  padding: 0 5px;
+}
+.issue-title {
+  font-size: 15px;
+  width: 870%;
+}
+.issue-title a:hover {
+  color: #58a6ff;
+}
+.issue-comment {
+  justify-content: flex-end !important;
+}
+.issue-title-info {
+  font-size: 13px;
+  color: blueviolet;
+}
+.issue-id {
+  margin-right: 5px;
+}
+/* icon css */
+.fa-dot-circle {
+  color: purple;
+  font-size: 16px;
+}
 /* info-container */
 .info-container {
   justify-content: center;
@@ -78,6 +154,12 @@ body {
 
 #footer-nav ul {
   list-style-type: none;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-flow: row wrap;
+}
+#footer-nav ul li {
+  padding: 1rem;
+}
+#footer-nav ul li a {
+  color: #58a6ff;
 }
